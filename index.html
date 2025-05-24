@@ -18,31 +18,48 @@
                 <li><a href="#source">Inicio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#objetivo">Objetivo</a></li>
+                <li ><a href="#contato">Contato</a></li>
+            </ul>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img src="img/menu_white_36dp.svg" class="icon">
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>  
+                <li><a href="#source">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#objetivo">Objetivo</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-        </nav>
+
+        </div>
     </header>
     <main>
 
         <section id="source">
             <div class="conteudo">
                 <div class="textoCima">
-                    <p>Olá eu sou o</p>
+                    <p>Olá, eu sou o</p>
                 </div>
                 <div class="titulo">
                     <h1>WESLEY <br>TRICHES</h1>
                 </div>
             </div>
             <div class="configuracaoImagem">
-                <img class="imagem" src="img/fotoWesley.jpeg"  draggable="false" alt="foto">
+                <img class="imagem" src="img/fotoWesley.jpeg" draggable="false" alt="foto">
             </div>
         </section>
 
         <section id="sobre">
             <h2>Quem está por trás deste portfólio?</h2>
             <div class="sobreTexto">
-                <p>Wesley Triches, atualmente com 19 anos, apaixonado por tecnologia e inovação desde a infância. 
-                    No decorrer dos anos, fui desenvolvendo grandes interesses em áreas de Ciência de Dados, Desenvolvimento e Inteligência Artificial.
+                <p>Wesley Triches, atualmente com 19 anos, apaixonado por tecnologia e inovação desde a infância.
+                    No decorrer dos anos, fui desenvolvendo grandes interesses em áreas, como <b>Desenvolvimento de Software</b>, Inteligência Artificial
+                    e Ciência de Dados.
                     Sou uma pessoa que gosta muito de estudar e que acredita no poder do aprendizado contínuo.
                     Estou sempre em busca de novos conhecimentos, assim
                     buscando evoluir cada vez mais tanto no aspecto profissional quanto pessoal.
@@ -53,33 +70,44 @@
 
         <section id="objetivo">
             <h2>Qual meu objetivo de carreira?</h2>
-                <div class="objetivoTexto">
-                    Meu principal objetivo de carreira é atuar na área de programação, como desenvolvedor Back-end utilizando meus
-                    conhecimentos em linguagens de programação e tecnologias, para criar soluções inovadoras que automatizem processos melhorando e facilitando o dia a dia das pessoas.
-                </div>
+            <div class="objetivoTexto">
+                Meu objetivo é construir uma carreira sólida na área de<b> Desenvolvimento de Software</b>, focando no desenvolvimento de soluções Back-End
+                eficientes e de grande escalação. Além disso, buscarei também me aperfeiçoar na criação de interfaces Front-End
+                que sejam modernas, intuitivas e principalmente responsivas. <br><br>Quero me aprofundar cada vez mais nas práticas de Engenharia de Software, visando sempre
+                a construção de um código limpo e de alta qualidade que faça a diferença. Tenho metas bem definidas para minha evolução profissional, e, ao longo da minha trajetória,
+                pretendo alcançar o cargo de <b>Tech Lead</b>, liderando equipes, em busca de soluções inovadoras que alcancem ótimos resultados.
+                <br><br>
+                
+                
+                
+            </div>
         </section>
 
         <section id="contato">
-            <h2>Entre em contato</h2>
-            <form action="">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" required placeholder="Digite o seu nome"><br><br>
+            <h2 class="tituloContato">Entre em contato</h2>
+            <div class="formContainer">
+                <form action="">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required placeholder="Digite o seu nome"><br><br>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" required placeholder="Digite o seu e-mail"><br><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required placeholder="Digite o seu e-mail"><br><br>
 
-                <label for="comentario">Comentário:</label><br>
-                <textarea name="comentario" id="comentario" rows="6" cols="50"
-                    placeholder="Escreva seu comentário aqui..."></textarea><br>
+                    <label for="comentario">Tem algo em mente? Mande uma mensagem!</label>
+                    <textarea name="comentario" id="comentario" rows="6" cols="50"
+                        placeholder="Escreva sua mensagem aqui..."></textarea><br>
 
-                <input type="submit" value="Enviar">
-            </form>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
 
         </section>
     </main>
     <footer>
         <p>2025 © Wesley Triches</p>
     </footer>
+
+    <script src="./js/script.js"> </script>
 </body>
 
 </html>
